@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Carousel Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carousel</h1>
+        <div class="app"></div>
+    </div>
+
+    <!-- templates for carousel container and individual carousel blocks -->
+    <script type="text/template" id="carousel-template">
+        <div class="carousel-wrapper">
+            <div class="carousel-wrapper-inner">
+
+            </div>
+            <div class="carousel-nav">
+                <span class="nav-prev">&lt; Prev</span>
+                <span class="nav-next">Next &gt;</span>
+            </div>
+        </div>
+    </script>
+    <script type="text/template" id="block-template">
+        <span class="block-title"><%= title %></span>
+        <div class="block-image"><img src="<%= _.sample(images) %>" alt=""></div>
+    </script>
+
+    <!-- jQuery, underscore, backbone and our app scripts -->
+    <script src="./lib/jquery.min.js" type="text/javascript"></script>
+    <script src="./lib/underscore.min.js" type="text/javascript"></script>
+    <script src="./lib/backbone.min.js"></script>
+    <script src="app.js"></script>
+</body>

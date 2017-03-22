@@ -1,0 +1,95 @@
+html,
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+}
+
+.carousel-wrapper-inner {
+    transform: translateX(0);
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.carousel-block {
+    width: 25%;
+    float: left;
+    padding: 0 5px;
+}
+
+.block-title {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.block-image {
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+    border: 1px solid gray;
+}
+
+.block-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-nav {
+    text-align: center;
+    margin: 20px 0 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: mediumaquamarine;
+}
+
+.nav-prev {
+    margin-right: 20px;
+}
+
+.nav-prev,
+.nav-next {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.carousel-nav > span.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
